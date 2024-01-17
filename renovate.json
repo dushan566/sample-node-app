@@ -17,5 +17,7 @@
       ]
     }
   ],
+  "dependencyDashboard": true
+  "major": { "masterIssueApproval": true }
   "separateMajorMinor": false
 }
