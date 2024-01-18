@@ -6,18 +6,24 @@
   },
   "packageRules": [
     {
-      "groupName": "all dependencies",
+      "groupName": "npm",
       "groupSlug": "all",
       "matchUpdateTypes": [
         "minor",
         "patch"
       ],
+      "matchDatasources": ["npm"],
       "matchPackagePatterns": [
-        "*"
-      ]
+        "package.json"
+      ],
+      "dependencyDashboardApproval": true
+    },
+    {
+      "groupName": "docker",
+      "groupSlug": "all",
+      "matchDatasources": ["docker"],
     }
   ],
   "dependencyDashboard": true,
-  "major": { "masterIssueApproval": true },
   "separateMajorMinor": false
 }
