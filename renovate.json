@@ -1,5 +1,5 @@
 {
-  "groupName": "all dependencies",
+  "dependencyDashboard": true,
   "groupSlug": "all",
   "lockFileMaintenance": {
     "enabled": false
@@ -10,7 +10,7 @@
       "groupSlug": "all",
       "matchRules": [
         {
-          "matchUpdateTypes": ["minor", "patch"],
+          "matchUpdateTypes": ["minor", "patch"], // Existing matchRule
           "matchDatasources": ["npm"],
           "matchPackagePatterns": [
             "package.json"
@@ -18,13 +18,13 @@
           "dependencyDashboardApproval": true
         }
       ],
-      "dependencyDashboard": true,
     },
     {
       "groupName": "docker",
       "groupSlug": "all",
       "matchRules": [
         {
+          // Existing matchRule
           "matchDatasources": ["docker"]
         }
       ],
