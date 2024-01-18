@@ -10,24 +10,21 @@
       "groupSlug": "all",
       "matchRules": [
         {
-          "matchUpdateTypes": ["minor", "patch"], // Existing matchRule
+          "matchUpdateTypes": ["minor", "patch"],
           "matchDatasources": ["npm"],
-          "matchPackagePatterns": [
-            "package.json"
-          ],
+          "matchPackagePatterns": ["package.json"],
           "dependencyDashboardApproval": true
         }
-      ],
+      ]
     },
     {
       "groupName": "docker",
       "groupSlug": "all",
       "matchRules": [
         {
-          // Existing matchRule
           "matchDatasources": ["docker"]
         }
-      ],
+      ]
     }
   ]
 }
