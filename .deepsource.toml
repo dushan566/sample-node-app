@@ -1,0 +1,24 @@
+version = 1
+
+[[analyzers]]
+name = "javascript"
+
+  [analyzers.meta]
+  plugins = [
+    "angular",
+    "react",
+    "angularjs"
+  ]
+  environment = ["nodejs"]
+
+[[analyzers]]
+name = "test-coverage"
+
+[[analyzers]]
+name = "secrets"
+
+[[analyzers]]
+name = "docker"
+
+[[transformers]]
+name = "standardjs"
