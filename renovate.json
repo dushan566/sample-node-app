@@ -1,30 +1,27 @@
 {
    "groupName": "all dependencies",
-   "groupSlug":"all",
-   "dependencyDashboard":true,
-   "lockFileMaintenance":{
-      "enabled":false
+   "groupSlug": "all",
+   "dependencyDashboard": true,
+   "lockFileMaintenance": {
+      "enabled": false
    },
-   "packageRules":[
+   "packageRules": [
       {
-         "groupName":"npm",
-         "groupSlug":"all",
-         "automerge": false
-         "matchUpdateTypes":["minor", "patch", "pin", "digest"],
-         "matchDatasources":["npm"],
-         "matchPackagePatterns":["package.json","package-lock.json"],
-         {
-            "matchDepTypes": ["devDependencies"],
-            "automerge": false
-          },
+         "groupName": "npm",
+         "groupSlug": "all",
+         "automerge": false,
+         "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+         "matchDatasources": ["npm"],
+         "matchPackagePatterns": ["package.json", "package-lock.json"],
+         "automerge": false,
          "labels": ["node"],
-         "dependencyDashboardApproval":true
+         "dependencyDashboardApproval": true
       },
       {
-         "groupName":"docker",
-         "groupSlug":"all",
-         "matchUpdateTypes":["minor", "patch", "pin", "digest"],
-         "matchDatasources":["docker"],
+         "groupName": "docker",
+         "groupSlug": "all",
+         "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+         "matchDatasources": ["docker"],
          "automerge": false,
          "labels": ["docker"]
       }
