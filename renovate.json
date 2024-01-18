@@ -10,22 +10,22 @@
          "groupName":"npm",
          "groupSlug":"all",
          "automerge": false
-         "matchUpdateTypes":["minor", "patch", "pin", "digest"]
+         "matchUpdateTypes":["minor", "patch", "pin", "digest"],
          "matchDatasources":["npm"],
          "matchPackagePatterns":["package.json","package-lock.json"],
          {
             "matchDepTypes": ["devDependencies"],
             "automerge": false
           },
-         "labels": ["node"]
+         "labels": ["node"],
          "dependencyDashboardApproval":true
       },
       {
          "groupName":"docker",
          "groupSlug":"all",
-         "matchUpdateTypes":["minor", "patch", "pin", "digest"]
-         "matchDatasources":["docker"]
-         "automerge": false
+         "matchUpdateTypes":["minor", "patch", "pin", "digest"],
+         "matchDatasources":["docker"],
+         "automerge": false,
          "labels": ["docker"]
       }
    ]
