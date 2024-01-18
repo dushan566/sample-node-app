@@ -1,6 +1,4 @@
 {
-   "groupName": "all dependencies",
-   "groupSlug": "all",
    "dependencyDashboard": true,
    "lockFileMaintenance": {
       "enabled": false
@@ -10,7 +8,7 @@
          "groupName": "npm",
          "groupSlug": "all",
          "automerge": false,
-         "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+         "matchUpdateTypes": ["minor", "patch"],
          "matchDatasources": ["npm"],
          "matchPackagePatterns": ["package.json", "package-lock.json"],
          "automerge": false,
@@ -19,7 +17,7 @@
       },
       {
          "groupName": "docker",
-         "groupSlug": "all",
+         "groupSlug": "iac",
          "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
          "matchDatasources": ["docker"],
          "automerge": false,
