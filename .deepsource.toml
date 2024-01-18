@@ -7,12 +7,13 @@ name = "javascript"
   plugins = [
     "angular",
     "react",
-    "angularjs"
+    "angularjs",
+    "ember"
   ]
-  environment = ["nodejs"]
-
-[[analyzers]]
-name = "test-coverage"
+  environment = [
+    "nodejs",
+    "jquery"
+  ]
 
 [[analyzers]]
 name = "secrets"
