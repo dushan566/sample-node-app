@@ -1,25 +1,16 @@
 version = 1
 
 [[analyzers]]
+name = "shell"
+
+[[analyzers]]
 name = "javascript"
 
   [analyzers.meta]
   plugins = [
-    "angular",
     "react",
-    "angularjs",
-    "ember"
+    "angular",
+    "ember",
+    "angularjs"
   ]
-  environment = [
-    "nodejs",
-    "jquery"
-  ]
-
-[[analyzers]]
-name = "secrets"
-
-[[analyzers]]
-name = "docker"
-
-[[transformers]]
-name = "standardjs"
+  environment = ["nodejs"]
