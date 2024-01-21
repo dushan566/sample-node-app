@@ -1,6 +1,9 @@
 {
    "groupName": "all dependencies",
    "groupSlug": "all",
+   "separateMajorMinor": true,
+   "separateMultipleMajor": true,
+   "separateMinorPatch": true,
    "dependencyDashboard": true,
    "lockFileMaintenance": {
       "enabled": false
@@ -14,10 +17,7 @@
          "matchDatasources": ["npm"],
          "automerge": false,
          "labels": ["node"],
-         "dependencyDashboardApproval": true,
-			"separateMajorMinor": true,
-			"separateMultipleMajor": true,
-			"separateMinorPatch": true
+         "dependencyDashboardApproval": true
       },
       {
          "groupName": "docker",
