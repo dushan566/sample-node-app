@@ -15,7 +15,8 @@
          "automerge": false,
          "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
          "matchDatasources": ["npm"],
-         "ignoreDeps": ["mysql"],
+         "ignoreDeps": ["musql"],
+         "ignorePaths": ["docs/**", ".jit/**"],
          "labels": ["node"],
          "dependencyDashboardApproval": true
       }
