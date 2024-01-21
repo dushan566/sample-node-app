@@ -1,24 +1,23 @@
 {
-  "groupName": "all dependencies",
-  "groupSlug": "all",
-  "separateMajorMinor": true,
-  "separateMinorPatch": false,
-  "separateMultipleMajor": false,
-  "dependencyDashboard": true,
-  "lockFileMaintenance": {
-    "enabled": true
-  },
-  "packageRules": [
-    {
-      "groupName": "npm",
-      "groupSlug": "all",
-      "automerge": false,
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "matchDatasources": ["npm"],
-      "ignoreDeps": ["musql"],
-      "ignorePaths": ["docs/**", ".jit/**"],
-      "labels": ["node"],
-      "dependencyDashboardApproval": true
-    }
-  ]
+   "groupName": "all dependencies",
+   "groupSlug": "all",
+   "separateMajorMinor": true,
+   "separateMinorPatch": true,
+   "dependencyDashboard": true,
+   "lockFileMaintenance": {
+      "enabled": false
+   },
+   "packageRules": [
+      {
+         "groupName": "npm",
+         "groupSlug": "all",
+         "automerge": false,
+         "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+         "matchDatasources": ["npm"],
+         "ignoreDeps": ["musql"],
+         "automerge": false,
+         "labels": ["node"],
+         "dependencyDashboardApproval": true
+      }
+   ]
 }
