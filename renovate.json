@@ -16,7 +16,7 @@
          "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
          "matchDatasources": ["npm"],
          "ignoreDeps": ["mysql"],
-         "ignorePaths": ["**/Dockerfile*", "**/docker/**"],
+         "ignorePaths": ["**/Dockerfile/**", "**/docker/**"],
          "labels": ["node"],
          "dependencyDashboardApproval": true
       }
