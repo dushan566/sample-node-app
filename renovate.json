@@ -12,15 +12,18 @@
          "automerge": false,
          "matchUpdateTypes": ["minor", "patch"],
          "matchDatasources": ["npm"],
-         "matchPackagePatterns": ["package.json", "package-lock.json"],
          "automerge": false,
          "labels": ["node"],
-         "dependencyDashboardApproval": true
+         "dependencyDashboardApproval": true,
+			"separateMajorMinor": true,
+			"separateMultipleMajor": true,
+			"separateMinorPatch": true
       },
       {
          "groupName": "docker",
          "groupSlug": "iac",
          "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+         "matchPackagePatterns": "mysql",
          "matchDatasources": ["docker"],
          "automerge": false,
          "labels": ["docker"]
