@@ -13,7 +13,7 @@
          "groupName": "npm",
          "groupSlug": "all",
          "automerge": false,
-         "matchUpdateTypes": ["minor", "patch"],
+         "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
          "matchDatasources": ["npm"],
          "automerge": false,
          "labels": ["node"],
