@@ -2,7 +2,8 @@
    "groupName": "all dependencies",
    "groupSlug": "all",
    "separateMajorMinor": true,
-   "separateMinorPatch": true,
+   "separateMultipleMajor": false,
+   "separateMinorPatch": false,
    "dependencyDashboard": true,
    "lockFileMaintenance": {
       "enabled": false
