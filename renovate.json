@@ -15,18 +15,11 @@
          "automerge": false,
          "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
          "matchDatasources": ["npm"],
+         "ignoreDeps": ["mysql"],
+         "ignorePaths": ["**/Docker*", "**/docker/**"]
          "automerge": false,
          "labels": ["node"],
          "dependencyDashboardApproval": true
-      },
-      {
-         "groupName": "docker",
-         "groupSlug": "iac",
-         "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-         "matchPackagePatterns": "mysql",
-         "matchDatasources": ["docker"],
-         "automerge": false,
-         "labels": ["docker"]
       }
    ]
 }
