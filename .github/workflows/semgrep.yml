@@ -15,7 +15,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Run Semgrep
-        run: semgrep -c p/default -c p/security-audit -c p/cwe-top-25 -c p/owasp-top-ten -c p/javascript -c p/expressjs -c r/javascript.express --baseline-commit HEAD~ --json > findings.json
+        run: semgrep -c p/default -c p/security-audit -c p/secrets -c p/gitleaks -c p/sql-injection -c p/xss -c p/r2c-security-audit -c p/cwe-top-25 -c p/owasp-top-ten -c p/javascript -c p/expressjs -c r/javascript.express --baseline-commit HEAD~ --json > findings.json
       - name: Set up Python environment
         uses: actions/setup-python@v2
         with:
