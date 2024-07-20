@@ -1,0 +1,36 @@
+name: Trivy Scan
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  trivy-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Install Trivy
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y wget
+        wget https://github.com/aquasecurity/trivy/releases/download/v0.38.3/trivy_0.38.3_Linux-64bit.deb
+        sudo dpkg -i trivy_0.38.3_Linux-64bit.deb
+
+    - name: Run Trivy scan
+      run: trivy filesystem --security-checks vuln --severity HIGH,CRITICAL . > trivy_report.txt
+
+    - name: Format Trivy report for comment
+      run: |
+        echo '```' > formatted_report.txt
+        cat trivy_report.txt >> formatted_report.txt
+        echo '```' >> formatted_report.txt
+
+    - name: Post Trivy report to PR
+      uses: marocchino/sticky-pull-request-comment@v2
+      with:
+        path: formatted_report.txt
+        GITHUB_TOKEN: ${{ secrets.AUTOMATION_TOKEN }}
