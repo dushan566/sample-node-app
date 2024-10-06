@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   jit-ci-job:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     timeout-minutes: ${{ fromJSON(github.event.inputs.client_payload).payload.runner_setup.timeout_minutes }}
     steps:
     - name: ${{ fromJSON( inputs.client_payload ).payload.workflow_job_name }}
